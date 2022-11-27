@@ -13,7 +13,7 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 mydb = mysql.connector.connect(
   host=os.getenv('HOSTS'),
-#   port=3306,
+  port=3306,
   user=os.getenv('USERS'),
   password=os.getenv('PASSW'),
   database=os.getenv('DATABASES')
