@@ -23,7 +23,7 @@ app.config['UPLOADED_PATH']="D:\\Blog Project"
 app.secret_key=os.getenv('SECRET_KEY')
 #INSERT INTO `posts` (`sno`, `slug`, `title`, `content`) VALUES (NULL, 'hello-g', 'Hello', 'hfghfgh');
 mycursor = mydb.cursor()
-pwd={"userw":f"{os.getenv('PASS')}","passw":f"{os.getenv('PASS')}"}
+pwd={"userw":f"{os.getenv('USER')}","passw":f"{os.getenv('PASS')}"}
 
 @app.route("/")
 def index():
